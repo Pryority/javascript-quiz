@@ -1,7 +1,9 @@
 var startButton = $( "a #start" );
 var startContainer = $('div #start-quiz-wrapper')
-var question = $('#question1')
+var question1 = $('#question1')
 var score = $('div #score')
+var correct = $('#correct-prompt')
+var incorrect = $('#incorrect-prompt')
 
 
 var handleTimeUp = function() {
@@ -14,14 +16,16 @@ var handleTimeUp = function() {
             
 
             clearInterval(timeInterval);
-            question.show()
+            question1.show()
         }
     }, 1000)
 }
 
 // 1. Display starting screen
 $(function(){
-    question.hide()
+    $('#correct-prompt').hide()
+    $('#incorrect-prompt').hide()
+    question1.hide()
     score.hide()
 
     // 2. User presses start quiz
@@ -29,7 +33,10 @@ $(function(){
         // Starting screen is hidden
         startContainer.hide()
         // First question becomes visible
-        question.show()
+        question1.show()
+        question1.on('click', '#answer', function(){
+            question1.hide()
+        })
         // Function to handle end of game from time out
         handleTimeUp();
         

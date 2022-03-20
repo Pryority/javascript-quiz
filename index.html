@@ -29,16 +29,20 @@
             <a href="#quiz" id="start" class="btn btn-primary align-items-center text-center">Start Quiz</a>
         </div>
         
-        <div class="main bg-light rounded" id="question1">
-            <div class="card-body">
-                <h1 class="card-text font-weight-bold">Inside which HTML element do we put the JavaScript?</h1>
+        <div class="col d-flex justify-content-center">
+            <div class="main bg-light rounded" id="question1">
+                <div class="card-body">
+                    <h1 class="card-text font-weight-bold">Inside which HTML element do we put the JavaScript?</h1>
+                </div>
+                <div class="col" id="options">
+                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                </div>
             </div>
-            <div class="col" id="options p-4">
-                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-            </div>
+            <h3 class="display-4 bg-success text-center rounded d-flex justify-content-center w-75 mt-4 font-weight-bold text-light" id="correct-prompt">CORRECT!</h3>
+            <h3 class="display-4 bg-danger text-center rounded d-flex justify-content-center w-75 mt-4 font-weight-bold text-light" id="incorrect-prompt">INCORRECT!</h3>
         </div>
     </div>
     <!-- Added link to the jQuery library -->
