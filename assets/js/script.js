@@ -1,24 +1,8 @@
 var startButton = $( "a #start" );
 var startContainer = $('div #start-quiz-wrapper')
-var question = $('#question')
-// var time = $('#time')
+var question = $('#question1')
+var score = $('div #score')
 
-
-// 1. Display starting screen
-$(document).ready(function(){
-    // 2. User presses start quiz
-    startContainer.on("click", "#start", function() {
-        startContainer.addClass('invisible')
-        question.removeClass('invisible')
-        handleTimeUp();
-        
-        // 3. a) if user answers incorrectly, subract 5000 milliseconds from current time
-        // 4. a) When the timer reaches zero, remove any question displayed on the screen.
-        // 4. b) Display score and give user option to enter their initials for a high-score.
-    });
-})
-
-// create a function handle time up and when all questions answered
 
 var handleTimeUp = function() {
     var timeInterval = setInterval(function(){
@@ -30,7 +14,27 @@ var handleTimeUp = function() {
             
 
             clearInterval(timeInterval);
-            question.removeClass('invisible')
+            question.show()
         }
-    }, 10)
+    }, 1000)
 }
+
+// 1. Display starting screen
+$(function(){
+    question.hide()
+    score.hide()
+
+    // 2. User presses start quiz
+    startContainer.on("click", "#start", function() {
+        // Starting screen is hidden
+        startContainer.hide()
+        // First question becomes visible
+        question.show()
+        // Function to handle end of game from time out
+        handleTimeUp();
+        
+        // 3. a) if user answers incorrectly, subract 5000 milliseconds from current time
+        // 4. a) When the timer reaches zero, remove any question displayed on the screen.
+        // 4. b) Display score and give user option to enter their initials for a high-score.
+    });
+})

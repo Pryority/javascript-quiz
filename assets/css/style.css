@@ -10,3 +10,7 @@ body {
     rgb(75, 141, 84) 100%
   );
 }
+
+ul {
+  list-style: none;
+}

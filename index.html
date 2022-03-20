@@ -19,26 +19,33 @@
             </div>
         </div>
 
+        <div id="result">
+            <div class="mt-5 diplay-4" id="score">Score: <span></span>/5</div>
+        </div>
+
         <div id="start-quiz-wrapper" class="row mw-auto p-3 h-100 align-items-center justify-content-center bg-warning">
             <h5 class="text-center">Javascript Quiz</h5>
             <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut soluta animi incidunt voluptate alias sed voluptas pariatur! Quasi cupiditate reiciendis voluptate quae quod praesentium accusantium omnis impedit! Fugit, eum eligendi?</p>
             <a href="#quiz" id="start" class="btn btn-primary align-items-center text-center">Start Quiz</a>
         </div>
-    
-        <article id="question" class="invisible min-vh-100 d-flex mx-auto align-items-center">
-                <div class="col p-4 mx-auto align-items-center rounded bg-light">
-                    <h1 class="font-weight-bolder my-4">THIS IS THE TEXT OF THE QUESTION</h1>
-                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                </div>
-        </article>
+        
+        <div class="main bg-light rounded" id="question1">
+            <div class="card-body">
+                <h1 class="card-text font-weight-bold">Inside which HTML element do we put the JavaScript?</h1>
+            </div>
+            <div class="col" id="options p-4">
+                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+            </div>
+        </div>
     </div>
     <!-- Added link to the jQuery library -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script type="text/javascript" src="assets/js/script.js" ></script>
+
 </body>
 </html>
 
