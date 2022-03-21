@@ -23,7 +23,7 @@ var handleTimeUp = function() {
             clearInterval(timeInterval);
             endGame.show()
         }
-    }, 10)
+    }, 1000)
 }
 
 // 1. Display starting screen

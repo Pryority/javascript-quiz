@@ -39,3 +39,15 @@ ul {
   box-shadow: 0 4px 16px 0px rgb(8, 58, 25);
   border: 1.62px solid #a0a9ae;
 }
+
+.main {
+  border-radius: 16px;
+}
+
+.card-body {
+  margin-bottom: 16px;
+}
+
+.main {
+  padding: 24px;
+}
