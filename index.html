@@ -41,11 +41,21 @@
                 <div class="row justify-content-center">
                     <h1 class="text-center font-weight-bold p-3">TIME'S UP!</h1>
                 </div>
-                <div class="row justify-content-center">
-                    <p class="text-center">Your score is:</p>
+                <div id="high-score" class="col">
+                    <div class="row justify-content-center">
+                        <p class="text-center">Your score is:</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="row">
+                            <input id="username" class="text-center" placeholder="Enter your username"></input>
+                            <button id="enter">Enter</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="row justify-content-center">
-                    <a href="#quiz" id="restart" class="btn btn-primary align-items-center text-center mt-4">Restart</a>
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <a href="#quiz" id="restart" class="btn btn-primary align-items-center text-center mt-4">Restart</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,46 +63,46 @@
         <div class="col d-flex justify-content-center">
             <div id="question1" class="main bg-light">
                 <div class="card-body">
-                    <h1 class="card-text font-weight-bold">Inside which HTML element do we put the JavaScript?</h1>
+                    <h1 class="card-text font-weight-bold">String values must be closed within ______ when being assigned to variables.</h1>
                 </div>
                 <div class="col" id="options">
-                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Parantheses</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Curly brackets</button>
+                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Quotes</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Commas</button>
                 </div>
             </div>
             <div id="question2" class="main bg-light">
                 <div class="card-body">
-                    <h1 class="card-text font-weight-bold">Where is the correct place to insert a JavaScript?</h1>
+                    <h1 class="card-text font-weight-bold">A very useful tool used during development and debugging for printing content to the debugger is:</h1>
                 </div>
                 <div class="col" id="options">
-                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">JavaScript</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">terminal/bash</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">for loops</button>
+                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">console.log</button>
                 </div>
             </div>
             <div id="question3" class="main bg-light">
                 <div class="card-body">
-                    <h1 class="card-text font-weight-bold">Inside which HTML element do we put the JavaScript?</h1>
+                    <h1 class="card-text font-weight-bold">Arrays in JavaScript can be used to store:</h1>
                 </div>
                 <div class="col" id="options">
-                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">numbers and strings</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">other arrays</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">booleans</button>
+                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">All of the above</button>
                 </div>
             </div>
             <div id="question4" class="main bg-light">
                 <div class="card-body">
-                    <h1 class="card-text font-weight-bold">Inside which HTML element do we put the JavaScript?</h1>
+                    <h1 class="card-text font-weight-bold">The condition in an if / else statement is enclosed within:</h1>
                 </div>
                 <div class="col" id="options">
-                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
-                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">This is an answer to a question.</button>
+                    <button id="answer" type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Parenthesis</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Quotes</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Curly brackets</button>
+                    <button type="button" class="btn btn-outline-primary p-3 mb-3 w-100 text-left">Square brackets</button>
                 </div>
             </div>
             <div class="hide">

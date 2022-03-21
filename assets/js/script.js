@@ -9,7 +9,11 @@ var question5 = $('#question5')
 var score = $('div #score')
 var correct = $('#correct-prompt')
 var incorrect = $('#incorrect-prompt')
+var highScore = $('high-score')
+let timeInt = 1000;
 
+
+// Add function that handles displaying the correct/incorrect prompt in a modal that lasts for a brif moment.
 
 var handleTimeUp = function() {
     var timeInterval = setInterval(function(){
@@ -28,7 +32,7 @@ var handleTimeUp = function() {
             question5.hide()
             endGame.show()
         }
-    }, 10)
+    }, timeInt)
 }
 
 // 1. Display starting screen
@@ -85,4 +89,17 @@ $(function(){
         endGame.hide()
         startContainer.show()
     })
+    endGame.on('click', '#enter', function appendText() {
+        var txt1 = "<p>Text.</p>";        // Create text with HTML
+        var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+        var txt3 = document.createElement("p");
+        txt3.innerHTML = $('#username').text;         // Create text with DOM
+        $("#high-score").append(txt1, txt2, txt3); })
 })
+
+
+// var appendInitials = function() {
+//     var initials = $("<p></p>").text("Text.");
+//     initials.innerHTML = "Text.";  
+//     high.appendInitials(initials)
+// }
