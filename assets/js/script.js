@@ -1,5 +1,6 @@
 var startButton = $( "a #start" );
 var startContainer = $('div #start-quiz-wrapper')
+var endGame = $('div #end-game')
 var question1 = $('#question1')
 var question2 = $('#question2')
 var question3 = $('#question3')
@@ -15,14 +16,14 @@ var handleTimeUp = function() {
         // 3. Timer starts counting down from 60 every second
         time.textContent -= 1
         
-        if (time.textContent === "0") {
+        if (time.textContent <= "0") {
             console.log('time is up!')
             
 
             clearInterval(timeInterval);
-            startContainer.show()
+            endGame.show()
         }
-    }, 1000)
+    }, 10)
 }
 
 // 1. Display starting screen
@@ -35,6 +36,7 @@ $(function(){
     question4.hide()
     question5.hide()
     score.hide()
+    endGame.hide()
 
     // 2. User presses start quiz
     startContainer.on("click", "#start", function() {
