@@ -21,9 +21,14 @@ var handleTimeUp = function() {
             
 
             clearInterval(timeInterval);
+            question1.hide()
+            question2.hide()
+            question3.hide()
+            question4.hide()
+            question5.hide()
             endGame.show()
         }
-    }, 1000)
+    }, 10)
 }
 
 // 1. Display starting screen
@@ -74,4 +79,10 @@ $(function(){
         // 4. a) When the timer reaches zero, remove any question displayed on the screen.
         // 4. b) Display score and give user option to enter their initials for a high-score.
     });
+
+    endGame.on('click', '#restart', function(){
+        time.textContent = "60"
+        endGame.hide()
+        startContainer.show()
+    })
 })
